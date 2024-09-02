@@ -82,6 +82,7 @@ public class VideoController {
 
 	@PostMapping("/{videoId}/video")
 	public ResponseEntity<?> postVideo(@PathVariable String videoId, @RequestParam("video") MultipartFile video)
+	
 			throws IOException {
 		if (log.isInfoEnabled()) {
 			log.info("video upload start");
